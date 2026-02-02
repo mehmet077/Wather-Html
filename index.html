@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Hava Durumu Paneli</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="search-box">
+            <input type="text" id="cityInput" placeholder="Şehir adını yazın..." spellcheck="false">
+            <button id="searchBtn">
+                <span id="btnText"><i class="fas fa-search"></i></span>
+                <div id="spinner" class="spinner"></div>
+            </button>
+        </div>
+
+        <div class="main-info">
+            <h2 id="cityName">Şehir Bekleniyor</h2>
+            <h1 id="temp">--°C</h1>
+            <p id="desc">Hava Durumu Bilgisi</p>
+        </div>
+
+        <div class="details-grid">
+            <div class="detail-card">
+                <i class="fas fa-thermometer-half"></i>
+                <span>Hissedilen</span>
+                <b id="feelsLike">--°C</b>
+            </div>
+            <div class="detail-card">
+                <i class="fas fa-tint"></i>
+                <span>Nem</span>
+                <b id="humidity">--%</b>
+            </div>
+            <div class="detail-card">
+                <i class="fas fa-wind"></i>
+                <span>Rüzgar</span>
+                <b id="windSpeed">-- km/s</b>
+            </div>
+            <div class="detail-card">
+                <i class="fas fa-sun"></i>
+                <span>UV İndeksi</span>
+                <b id="uvIndex">--</b>
+            </div>
+            <div class="detail-card">
+                <i class="fas fa-cloud-showers-heavy"></i>
+                <span>Yağış Olasılığı</span>
+                <b id="precip">-- mm</b>
+            </div>
+            <div class="detail-card">
+                <i class="fas fa-eye"></i>
+                <span>Görüş Mesafesi</span>
+                <b id="visibility">-- km</b>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
